@@ -3,54 +3,30 @@ const gameBoard = (function () {
     return { gameBoardArray };
 })();
 
-// function createPlayer(name, marker) {
-//     // function markSpot (marker) {
-//     // gameBoardFirstColumn.addEventListener('click', toggleMarker);
+function createPlayer(name, marker) {
+    // function markSpot (marker) {
+    // gameBoardFirstColumn.addEventListener('click', toggleMarker);
 
-//     // function toggleMarker() {
-//     // gameBoardFirstColumn.textContent = marker;
-//     // }
-//     // }
+    // function toggleMarker() {
+    // gameBoardFirstColumn.textContent = marker;
+    // }
+    // }
 
-//     // return { name, marker, markSpot };
-//     return { name, marker };
-// }
+    // return { name, marker, markSpot };
+    return { name, marker };
+}
 
 // maybe something that creates player objects using typed input from users?
 // read input from user, create object using inputs. Player 1 is first input, player 2 is second input.
 
-// player1 = createPlayer("Mark", "X");
-// player2 = createPlayer("Someone", "O");
-// console.log(player1);
-// console.log(player2);
-
-// const displayController = (function () {
-//     for (let i = 0; i < gameBoard.gameBoardArray.length; i++) {
-//         const div = document.createElement('div');
-//         div.style.padding = '50px';
-//         div.textContent = gameBoard.gameBoardArray[i];
-//         div.addEventListener('click', toggleMarker);
-
-//         console.log(gameBoard.gameBoardArray[i]);
-
-//         if (i < 3) {
-//         gameBoardFirstColumn.appendChild(div)
-//         }
-//         else if (i < 6) {
-//         gameBoardSecondColumn.appendChild(div);
-//         }
-//         else {
-//         gameBoardThirdColumn.appendChild(div);
-//         }
-//         function toggleMarker() {
-
-//             div.textContent = player1.marker;
-//             // div.textContent = "X";
-//         }
-//     }
-// })();
+player1 = createPlayer("Mark", "X");
+player2 = createPlayer("Someone", "O");
+console.log(player1);
+console.log(player2);
 
 const displayController = (function () {
+    let firstPlayerTurn = true;
+
     const first = document.querySelector('.first');
     const second = document.querySelector('.second');
     const third = document.querySelector('.third');
@@ -82,48 +58,120 @@ const displayController = (function () {
     ninth.addEventListener('click', toggleNinthMarker);
 
     function toggleFirstMarker() {
-        first.textContent = "X";
-        gameBoard.gameBoardArray[0] = "X";
+        if (firstPlayerTurn == true) {
+            first.textContent = "X";
+            gameBoard.gameBoardArray[0] = "X";
+            firstPlayerTurn = false;
+        }
+        else {
+            first.textContent = "O";
+            gameBoard.gameBoardArray[0] = "O";
+            firstPlayerTurn = true;
+        }
     }
 
     function toggleSecondMarker() {
-        second.textContent = "X";
-        gameBoard.gameBoardArray[1] = "X";
+        if (firstPlayerTurn == true) {
+            second.textContent = "X";
+            gameBoard.gameBoardArray[1] = "X";
+            firstPlayerTurn = false;
+        }
+        else {
+            second.textContent = "O";
+            gameBoard.gameBoardArray[1] = "O";
+            firstPlayerTurn = true;
+        }
     }
 
     function toggleThirdMarker() {
-        third.textContent = "X";
-        gameBoard.gameBoardArray[2] = "X";
+        if (firstPlayerTurn == true) {
+            third.textContent = "X";
+            gameBoard.gameBoardArray[2] = "X";
+            firstPlayerTurn = false;
+        }
+        else {
+            third.textContent = "O";
+            gameBoard.gameBoardArray[2] = "O";
+            firstPlayerTurn = true;
+        }
     }
 
     function toggleFourthMarker() {
-        fourth.textContent = "X";
-        gameBoard.gameBoardArray[3] = "X";
+        if (firstPlayerTurn == true) {
+            fourth.textContent = "X";
+            gameBoard.gameBoardArray[3] = "X";
+            firstPlayerTurn = false;
+        }
+        else {
+            fourth.textContent = "O";
+            gameBoard.gameBoardArray[3] = "O";
+            firstPlayerTurn = true;
+        }
     }
 
     function toggleFifthMarker() {
-        fifth.textContent = "X";
-        gameBoard.gameBoardArray[4] = "X";
+        if (firstPlayerTurn == true) {
+            fifth.textContent = "X";
+            gameBoard.gameBoardArray[4] = "X";
+            firstPlayerTurn = false;
+        }
+        else {
+            fifth.textContent = "O";
+            gameBoard.gameBoardArray[4] = "O";
+            firstPlayerTurn = true;
+        }
     }
 
     function toggleSixthMarker() {
-        sixth.textContent = "X";
-        gameBoard.gameBoardArray[5] = "X";
+        if (firstPlayerTurn == true) {
+            sixth.textContent = "X";
+            gameBoard.gameBoardArray[5] = "X";
+            firstPlayerTurn = false;
+        }
+        else {
+            sixth.textContent = "O";
+            gameBoard.gameBoardArray[5] = "O";
+            firstPlayerTurn = true;
+        }
     }
 
     function toggleSeventhMarker() {
-        seventh.textContent = "X";
-        gameBoard.gameBoardArray[6] = "X";
+        if (firstPlayerTurn == true) {
+            seventh.textContent = "X";
+            gameBoard.gameBoardArray[6] = "X";
+            firstPlayerTurn = false;
+        }
+        else {
+            seventh.textContent = "O";
+            gameBoard.gameBoardArray[6] = "O";
+            firstPlayerTurn = true;
+        }
     }
 
     function toggleEighthMarker() {
-        eighth.textContent = "X";
-        gameBoard.gameBoardArray[7] = "X";
+        if (firstPlayerTurn == true) {
+            eighth.textContent = "X";
+            gameBoard.gameBoardArray[7] = "X";
+            firstPlayerTurn = false;
+        }
+        else {
+            eighth.textContent = "O";
+            gameBoard.gameBoardArray[7] = "O";
+            firstPlayerTurn = true;
+        }
     }
 
     function toggleNinthMarker() {
-        ninth.textContent = "X";
-        gameBoard.gameBoardArray[8] = "X";
+        if (firstPlayerTurn == true) {
+            ninth.textContent = "X";
+            gameBoard.gameBoardArray[8] = "X";
+            firstPlayerTurn = false;
+        }
+        else {
+            ninth.textContent = "O";
+            gameBoard.gameBoardArray[8] = "O";
+            firstPlayerTurn = true;
+        }
     }
 
 })();
