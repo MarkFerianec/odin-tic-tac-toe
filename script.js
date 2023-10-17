@@ -58,12 +58,12 @@ const displayController = (function () {
     ninth.addEventListener('click', toggleNinthMarker);
 
     function toggleFirstMarker() {
-        if (firstPlayerTurn == true) {
+        if (firstPlayerTurn == true && gameBoard.gameBoardArray[0] != "O" && gameBoard.gameBoardArray[0] != "X") {
             first.textContent = "X";
             gameBoard.gameBoardArray[0] = "X";
             firstPlayerTurn = false;
         }
-        else {
+        else if (firstPlayerTurn == false && gameBoard.gameBoardArray[0] != "O" && gameBoard.gameBoardArray[0] != "X") {
             first.textContent = "O";
             gameBoard.gameBoardArray[0] = "O";
             firstPlayerTurn = true;
@@ -71,12 +71,12 @@ const displayController = (function () {
     }
 
     function toggleSecondMarker() {
-        if (firstPlayerTurn == true) {
+        if (firstPlayerTurn == true && gameBoard.gameBoardArray[1] != "O" && gameBoard.gameBoardArray[1] != "X") {
             second.textContent = "X";
             gameBoard.gameBoardArray[1] = "X";
             firstPlayerTurn = false;
         }
-        else {
+        else if (firstPlayerTurn == false && gameBoard.gameBoardArray[1] != "O" && gameBoard.gameBoardArray[1] != "X") {
             second.textContent = "O";
             gameBoard.gameBoardArray[1] = "O";
             firstPlayerTurn = true;
@@ -84,12 +84,12 @@ const displayController = (function () {
     }
 
     function toggleThirdMarker() {
-        if (firstPlayerTurn == true) {
+        if (firstPlayerTurn == true && gameBoard.gameBoardArray[2] != "O" && gameBoard.gameBoardArray[2] != "X") {
             third.textContent = "X";
             gameBoard.gameBoardArray[2] = "X";
             firstPlayerTurn = false;
         }
-        else {
+        else if (firstPlayerTurn == false && gameBoard.gameBoardArray[2] != "O" && gameBoard.gameBoardArray[2] != "X") {
             third.textContent = "O";
             gameBoard.gameBoardArray[2] = "O";
             firstPlayerTurn = true;
@@ -97,12 +97,12 @@ const displayController = (function () {
     }
 
     function toggleFourthMarker() {
-        if (firstPlayerTurn == true) {
+        if (firstPlayerTurn == true && gameBoard.gameBoardArray[3] != "O" && gameBoard.gameBoardArray[3] != "X") {
             fourth.textContent = "X";
             gameBoard.gameBoardArray[3] = "X";
             firstPlayerTurn = false;
         }
-        else {
+        else if (firstPlayerTurn == false && gameBoard.gameBoardArray[3] != "O" && gameBoard.gameBoardArray[3] != "X") {
             fourth.textContent = "O";
             gameBoard.gameBoardArray[3] = "O";
             firstPlayerTurn = true;
@@ -110,12 +110,12 @@ const displayController = (function () {
     }
 
     function toggleFifthMarker() {
-        if (firstPlayerTurn == true) {
+        if (firstPlayerTurn == true && gameBoard.gameBoardArray[4] != "O" && gameBoard.gameBoardArray[4] != "X") {
             fifth.textContent = "X";
             gameBoard.gameBoardArray[4] = "X";
             firstPlayerTurn = false;
         }
-        else {
+        else if (firstPlayerTurn == false && gameBoard.gameBoardArray[4] != "O" && gameBoard.gameBoardArray[4] != "X") {
             fifth.textContent = "O";
             gameBoard.gameBoardArray[4] = "O";
             firstPlayerTurn = true;
@@ -123,12 +123,12 @@ const displayController = (function () {
     }
 
     function toggleSixthMarker() {
-        if (firstPlayerTurn == true) {
+        if (firstPlayerTurn == true && gameBoard.gameBoardArray[5] != "O" && gameBoard.gameBoardArray[5] != "X") {
             sixth.textContent = "X";
             gameBoard.gameBoardArray[5] = "X";
             firstPlayerTurn = false;
         }
-        else {
+        else if (firstPlayerTurn == false && gameBoard.gameBoardArray[5] != "O" && gameBoard.gameBoardArray[5] != "X") {
             sixth.textContent = "O";
             gameBoard.gameBoardArray[5] = "O";
             firstPlayerTurn = true;
@@ -136,12 +136,12 @@ const displayController = (function () {
     }
 
     function toggleSeventhMarker() {
-        if (firstPlayerTurn == true) {
+        if (firstPlayerTurn == true && gameBoard.gameBoardArray[6] != "O" && gameBoard.gameBoardArray[6] != "X") {
             seventh.textContent = "X";
             gameBoard.gameBoardArray[6] = "X";
             firstPlayerTurn = false;
         }
-        else {
+        else if (firstPlayerTurn == false && gameBoard.gameBoardArray[6] != "O" && gameBoard.gameBoardArray[6] != "X") {
             seventh.textContent = "O";
             gameBoard.gameBoardArray[6] = "O";
             firstPlayerTurn = true;
@@ -149,12 +149,12 @@ const displayController = (function () {
     }
 
     function toggleEighthMarker() {
-        if (firstPlayerTurn == true) {
+        if (firstPlayerTurn == true && gameBoard.gameBoardArray[7] != "O" && gameBoard.gameBoardArray[7] != "X") {
             eighth.textContent = "X";
             gameBoard.gameBoardArray[7] = "X";
             firstPlayerTurn = false;
         }
-        else {
+        else if (firstPlayerTurn == false && gameBoard.gameBoardArray[7] != "O" && gameBoard.gameBoardArray[7] != "X") {
             eighth.textContent = "O";
             gameBoard.gameBoardArray[7] = "O";
             firstPlayerTurn = true;
@@ -162,12 +162,12 @@ const displayController = (function () {
     }
 
     function toggleNinthMarker() {
-        if (firstPlayerTurn == true) {
+        if (firstPlayerTurn == true && gameBoard.gameBoardArray[8] != "O" && gameBoard.gameBoardArray[8] != "X") {
             ninth.textContent = "X";
             gameBoard.gameBoardArray[8] = "X";
             firstPlayerTurn = false;
         }
-        else {
+        else if (firstPlayerTurn == false && gameBoard.gameBoardArray[8] != "O" && gameBoard.gameBoardArray[8] != "X") {
             ninth.textContent = "O";
             gameBoard.gameBoardArray[8] = "O";
             firstPlayerTurn = true;
