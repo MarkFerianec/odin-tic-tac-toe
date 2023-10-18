@@ -81,6 +81,13 @@ const displayController = (function () {
         if (gameBoard.gameBoardArray[0] == 'O' && gameBoard.gameBoardArray[3] == 'O' && gameBoard.gameBoardArray[6] == 'O') {
             console.log("O wins");
         }
+        // Diagonal markers
+        if (gameBoard.gameBoardArray[0] == 'X' && gameBoard.gameBoardArray[4] == 'X' && gameBoard.gameBoardArray[8] == 'X') {
+            console.log("X wins");
+        }
+        if (gameBoard.gameBoardArray[0] == 'O' && gameBoard.gameBoardArray[4] == 'O' && gameBoard.gameBoardArray[8] == 'O') {
+            console.log("O wins");
+        }
 
     }
 
@@ -133,6 +140,13 @@ const displayController = (function () {
             console.log("O wins");
         }
         if (gameBoard.gameBoardArray[2] == 'O' && gameBoard.gameBoardArray[5] == 'O' && gameBoard.gameBoardArray[8] == 'O') {
+            console.log("O wins");
+        }
+        // Diagonal markers
+        if (gameBoard.gameBoardArray[2] == 'X' && gameBoard.gameBoardArray[4] == 'X' && gameBoard.gameBoardArray[6] == 'X') {
+            console.log("X wins");
+        }
+        if (gameBoard.gameBoardArray[2] == 'O' && gameBoard.gameBoardArray[4] == 'O' && gameBoard.gameBoardArray[6] == 'O') {
             console.log("O wins");
         }
 
@@ -188,6 +202,20 @@ const displayController = (function () {
         if (gameBoard.gameBoardArray[1] == 'O' && gameBoard.gameBoardArray[4] == 'O' && gameBoard.gameBoardArray[7] == 'O') {
             console.log("O wins");
         }
+        // Diagonal markers
+        if (gameBoard.gameBoardArray[0] == 'X' && gameBoard.gameBoardArray[4] == 'X' && gameBoard.gameBoardArray[8] == 'X') {
+            console.log("X wins");
+        }
+        if (gameBoard.gameBoardArray[0] == 'O' && gameBoard.gameBoardArray[4] == 'O' && gameBoard.gameBoardArray[8] == 'O') {
+            console.log("O wins");
+        }
+        // Diagonal markers more???
+        if (gameBoard.gameBoardArray[2] == 'X' && gameBoard.gameBoardArray[4] == 'X' && gameBoard.gameBoardArray[6] == 'X') {
+            console.log("X wins");
+        }
+        if (gameBoard.gameBoardArray[2] == 'O' && gameBoard.gameBoardArray[4] == 'O' && gameBoard.gameBoardArray[6] == 'O') {
+            console.log("O wins");
+        }
     }
 
     function toggleSixthMarker() {
@@ -240,6 +268,13 @@ const displayController = (function () {
         if (gameBoard.gameBoardArray[0] == 'O' && gameBoard.gameBoardArray[3] == 'O' && gameBoard.gameBoardArray[6] == 'O') {
             console.log("O wins");
         }
+        // Diagonal markers
+        if (gameBoard.gameBoardArray[2] == 'X' && gameBoard.gameBoardArray[4] == 'X' && gameBoard.gameBoardArray[6] == 'X') {
+            console.log("X wins");
+        }
+        if (gameBoard.gameBoardArray[2] == 'O' && gameBoard.gameBoardArray[4] == 'O' && gameBoard.gameBoardArray[6] == 'O') {
+            console.log("O wins");
+        }
     }
 
     function toggleEighthMarker() {
@@ -290,6 +325,13 @@ const displayController = (function () {
             console.log("O wins");
         }
         if (gameBoard.gameBoardArray[2] == 'O' && gameBoard.gameBoardArray[5] == 'O' && gameBoard.gameBoardArray[8] == 'O') {
+            console.log("O wins");
+        }
+        // Diagonal markers
+        if (gameBoard.gameBoardArray[0] == 'X' && gameBoard.gameBoardArray[4] == 'X' && gameBoard.gameBoardArray[8] == 'X') {
+            console.log("X wins");
+        }
+        if (gameBoard.gameBoardArray[0] == 'O' && gameBoard.gameBoardArray[4] == 'O' && gameBoard.gameBoardArray[8] == 'O') {
             console.log("O wins");
         }
     }
