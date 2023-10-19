@@ -72,21 +72,33 @@ const displayController = (function () {
         if (gameBoard.gameBoardArray[0] == 'X' && gameBoard.gameBoardArray[1] == 'X' && gameBoard.gameBoardArray[2] == 'X') {
             console.log("X wins");
         }
-        if (gameBoard.gameBoardArray[0] == 'X' && gameBoard.gameBoardArray[3] == 'X' && gameBoard.gameBoardArray[6] == 'X') {
+        else if (gameBoard.gameBoardArray[0] == 'X' && gameBoard.gameBoardArray[3] == 'X' && gameBoard.gameBoardArray[6] == 'X') {
             console.log("X wins");
         }
-        if (gameBoard.gameBoardArray[0] == 'O' && gameBoard.gameBoardArray[1] == 'O' && gameBoard.gameBoardArray[2] == 'O') {
+        else if (gameBoard.gameBoardArray[0] == 'O' && gameBoard.gameBoardArray[1] == 'O' && gameBoard.gameBoardArray[2] == 'O') {
             console.log("O wins");
         }
-        if (gameBoard.gameBoardArray[0] == 'O' && gameBoard.gameBoardArray[3] == 'O' && gameBoard.gameBoardArray[6] == 'O') {
+        else if (gameBoard.gameBoardArray[0] == 'O' && gameBoard.gameBoardArray[3] == 'O' && gameBoard.gameBoardArray[6] == 'O') {
             console.log("O wins");
         }
         // Diagonal markers
-        if (gameBoard.gameBoardArray[0] == 'X' && gameBoard.gameBoardArray[4] == 'X' && gameBoard.gameBoardArray[8] == 'X') {
+        else if (gameBoard.gameBoardArray[0] == 'X' && gameBoard.gameBoardArray[4] == 'X' && gameBoard.gameBoardArray[8] == 'X') {
             console.log("X wins");
         }
-        if (gameBoard.gameBoardArray[0] == 'O' && gameBoard.gameBoardArray[4] == 'O' && gameBoard.gameBoardArray[8] == 'O') {
+        else if (gameBoard.gameBoardArray[0] == 'O' && gameBoard.gameBoardArray[4] == 'O' && gameBoard.gameBoardArray[8] == 'O') {
             console.log("O wins");
+        }
+        // tie logic
+        else if (typeof (gameBoard.gameBoardArray[0]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[1]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[2]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[3]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[4]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[5]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[6]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[7]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[8]) == 'string') {
+            console.log('tie');
         }
 
     }
@@ -106,14 +118,26 @@ const displayController = (function () {
         if (gameBoard.gameBoardArray[0] == 'X' && gameBoard.gameBoardArray[1] == 'X' && gameBoard.gameBoardArray[2] == 'X') {
             console.log("X wins");
         }
-        if (gameBoard.gameBoardArray[1] == 'X' && gameBoard.gameBoardArray[4] == 'X' && gameBoard.gameBoardArray[7] == 'X') {
+        else if (gameBoard.gameBoardArray[1] == 'X' && gameBoard.gameBoardArray[4] == 'X' && gameBoard.gameBoardArray[7] == 'X') {
             console.log("X wins");
         }
-        if (gameBoard.gameBoardArray[0] == 'O' && gameBoard.gameBoardArray[1] == 'O' && gameBoard.gameBoardArray[2] == 'O') {
+        else if (gameBoard.gameBoardArray[0] == 'O' && gameBoard.gameBoardArray[1] == 'O' && gameBoard.gameBoardArray[2] == 'O') {
             console.log("O wins");
         }
-        if (gameBoard.gameBoardArray[1] == 'O' && gameBoard.gameBoardArray[4] == 'O' && gameBoard.gameBoardArray[7] == 'O') {
+        else if (gameBoard.gameBoardArray[1] == 'O' && gameBoard.gameBoardArray[4] == 'O' && gameBoard.gameBoardArray[7] == 'O') {
             console.log("O wins");
+        }
+        // tie logic
+        else if (typeof (gameBoard.gameBoardArray[0]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[1]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[2]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[3]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[4]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[5]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[6]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[7]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[8]) == 'string') {
+            console.log('tie');
         }
 
     }
@@ -133,23 +157,34 @@ const displayController = (function () {
         if (gameBoard.gameBoardArray[0] == 'X' && gameBoard.gameBoardArray[1] == 'X' && gameBoard.gameBoardArray[2] == 'X') {
             console.log("X wins");
         }
-        if (gameBoard.gameBoardArray[2] == 'X' && gameBoard.gameBoardArray[5] == 'X' && gameBoard.gameBoardArray[8] == 'X') {
+        else if (gameBoard.gameBoardArray[2] == 'X' && gameBoard.gameBoardArray[5] == 'X' && gameBoard.gameBoardArray[8] == 'X') {
             console.log("X wins");
         }
-        if (gameBoard.gameBoardArray[0] == 'O' && gameBoard.gameBoardArray[1] == 'O' && gameBoard.gameBoardArray[2] == 'O') {
+        else if (gameBoard.gameBoardArray[0] == 'O' && gameBoard.gameBoardArray[1] == 'O' && gameBoard.gameBoardArray[2] == 'O') {
             console.log("O wins");
         }
-        if (gameBoard.gameBoardArray[2] == 'O' && gameBoard.gameBoardArray[5] == 'O' && gameBoard.gameBoardArray[8] == 'O') {
+        else if (gameBoard.gameBoardArray[2] == 'O' && gameBoard.gameBoardArray[5] == 'O' && gameBoard.gameBoardArray[8] == 'O') {
             console.log("O wins");
         }
         // Diagonal markers
-        if (gameBoard.gameBoardArray[2] == 'X' && gameBoard.gameBoardArray[4] == 'X' && gameBoard.gameBoardArray[6] == 'X') {
+        else if (gameBoard.gameBoardArray[2] == 'X' && gameBoard.gameBoardArray[4] == 'X' && gameBoard.gameBoardArray[6] == 'X') {
             console.log("X wins");
         }
-        if (gameBoard.gameBoardArray[2] == 'O' && gameBoard.gameBoardArray[4] == 'O' && gameBoard.gameBoardArray[6] == 'O') {
+        else if (gameBoard.gameBoardArray[2] == 'O' && gameBoard.gameBoardArray[4] == 'O' && gameBoard.gameBoardArray[6] == 'O') {
             console.log("O wins");
         }
-
+        // tie logic
+        else if (typeof (gameBoard.gameBoardArray[0]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[1]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[2]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[3]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[4]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[5]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[6]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[7]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[8]) == 'string') {
+            console.log('tie');
+        }
     }
 
     function toggleFourthMarker() {
@@ -167,14 +202,26 @@ const displayController = (function () {
         if (gameBoard.gameBoardArray[3] == 'X' && gameBoard.gameBoardArray[4] == 'X' && gameBoard.gameBoardArray[5] == 'X') {
             console.log("X wins");
         }
-        if (gameBoard.gameBoardArray[0] == 'X' && gameBoard.gameBoardArray[3] == 'X' && gameBoard.gameBoardArray[6] == 'X') {
+        else if (gameBoard.gameBoardArray[0] == 'X' && gameBoard.gameBoardArray[3] == 'X' && gameBoard.gameBoardArray[6] == 'X') {
             console.log("X wins");
         }
-        if (gameBoard.gameBoardArray[3] == 'O' && gameBoard.gameBoardArray[4] == 'O' && gameBoard.gameBoardArray[5] == 'O') {
+        else if (gameBoard.gameBoardArray[3] == 'O' && gameBoard.gameBoardArray[4] == 'O' && gameBoard.gameBoardArray[5] == 'O') {
             console.log("O wins");
         }
-        if (gameBoard.gameBoardArray[0] == 'O' && gameBoard.gameBoardArray[3] == 'O' && gameBoard.gameBoardArray[6] == 'O') {
+        else if (gameBoard.gameBoardArray[0] == 'O' && gameBoard.gameBoardArray[3] == 'O' && gameBoard.gameBoardArray[6] == 'O') {
             console.log("O wins");
+        }
+        // tie logic
+        else if (typeof (gameBoard.gameBoardArray[0]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[1]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[2]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[3]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[4]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[5]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[6]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[7]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[8]) == 'string') {
+            console.log('tie');
         }
     }
 
@@ -193,28 +240,40 @@ const displayController = (function () {
         if (gameBoard.gameBoardArray[3] == 'X' && gameBoard.gameBoardArray[4] == 'X' && gameBoard.gameBoardArray[5] == 'X') {
             console.log("X wins");
         }
-        if (gameBoard.gameBoardArray[1] == 'X' && gameBoard.gameBoardArray[4] == 'X' && gameBoard.gameBoardArray[7] == 'X') {
+        else if (gameBoard.gameBoardArray[1] == 'X' && gameBoard.gameBoardArray[4] == 'X' && gameBoard.gameBoardArray[7] == 'X') {
             console.log("X wins");
         }
-        if (gameBoard.gameBoardArray[3] == 'O' && gameBoard.gameBoardArray[4] == 'O' && gameBoard.gameBoardArray[5] == 'O') {
+        else if (gameBoard.gameBoardArray[3] == 'O' && gameBoard.gameBoardArray[4] == 'O' && gameBoard.gameBoardArray[5] == 'O') {
             console.log("O wins");
         }
-        if (gameBoard.gameBoardArray[1] == 'O' && gameBoard.gameBoardArray[4] == 'O' && gameBoard.gameBoardArray[7] == 'O') {
+        else if (gameBoard.gameBoardArray[1] == 'O' && gameBoard.gameBoardArray[4] == 'O' && gameBoard.gameBoardArray[7] == 'O') {
             console.log("O wins");
         }
         // Diagonal markers
-        if (gameBoard.gameBoardArray[0] == 'X' && gameBoard.gameBoardArray[4] == 'X' && gameBoard.gameBoardArray[8] == 'X') {
+        else if (gameBoard.gameBoardArray[0] == 'X' && gameBoard.gameBoardArray[4] == 'X' && gameBoard.gameBoardArray[8] == 'X') {
             console.log("X wins");
         }
-        if (gameBoard.gameBoardArray[0] == 'O' && gameBoard.gameBoardArray[4] == 'O' && gameBoard.gameBoardArray[8] == 'O') {
+        else if (gameBoard.gameBoardArray[0] == 'O' && gameBoard.gameBoardArray[4] == 'O' && gameBoard.gameBoardArray[8] == 'O') {
             console.log("O wins");
         }
         // Diagonal markers more???
-        if (gameBoard.gameBoardArray[2] == 'X' && gameBoard.gameBoardArray[4] == 'X' && gameBoard.gameBoardArray[6] == 'X') {
+        else if (gameBoard.gameBoardArray[2] == 'X' && gameBoard.gameBoardArray[4] == 'X' && gameBoard.gameBoardArray[6] == 'X') {
             console.log("X wins");
         }
-        if (gameBoard.gameBoardArray[2] == 'O' && gameBoard.gameBoardArray[4] == 'O' && gameBoard.gameBoardArray[6] == 'O') {
+        else if (gameBoard.gameBoardArray[2] == 'O' && gameBoard.gameBoardArray[4] == 'O' && gameBoard.gameBoardArray[6] == 'O') {
             console.log("O wins");
+        }
+        // tie logic
+        else if (typeof (gameBoard.gameBoardArray[0]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[1]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[2]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[3]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[4]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[5]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[6]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[7]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[8]) == 'string') {
+            console.log('tie');
         }
     }
 
@@ -233,14 +292,26 @@ const displayController = (function () {
         if (gameBoard.gameBoardArray[3] == 'X' && gameBoard.gameBoardArray[4] == 'X' && gameBoard.gameBoardArray[5] == 'X') {
             console.log("X wins");
         }
-        if (gameBoard.gameBoardArray[2] == 'X' && gameBoard.gameBoardArray[5] == 'X' && gameBoard.gameBoardArray[8] == 'X') {
+        else if (gameBoard.gameBoardArray[2] == 'X' && gameBoard.gameBoardArray[5] == 'X' && gameBoard.gameBoardArray[8] == 'X') {
             console.log("X wins");
         }
-        if (gameBoard.gameBoardArray[3] == 'O' && gameBoard.gameBoardArray[4] == 'O' && gameBoard.gameBoardArray[5] == 'O') {
+        else if (gameBoard.gameBoardArray[3] == 'O' && gameBoard.gameBoardArray[4] == 'O' && gameBoard.gameBoardArray[5] == 'O') {
             console.log("O wins");
         }
-        if (gameBoard.gameBoardArray[2] == 'O' && gameBoard.gameBoardArray[5] == 'O' && gameBoard.gameBoardArray[8] == 'O') {
+        else if (gameBoard.gameBoardArray[2] == 'O' && gameBoard.gameBoardArray[5] == 'O' && gameBoard.gameBoardArray[8] == 'O') {
             console.log("O wins");
+        }
+        // tie logic
+        else if (typeof (gameBoard.gameBoardArray[0]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[1]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[2]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[3]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[4]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[5]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[6]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[7]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[8]) == 'string') {
+            console.log('tie');
         }
     }
 
@@ -259,21 +330,33 @@ const displayController = (function () {
         if (gameBoard.gameBoardArray[6] == 'X' && gameBoard.gameBoardArray[7] == 'X' && gameBoard.gameBoardArray[8] == 'X') {
             console.log("X wins");
         }
-        if (gameBoard.gameBoardArray[0] == 'X' && gameBoard.gameBoardArray[3] == 'X' && gameBoard.gameBoardArray[6] == 'X') {
+        else if (gameBoard.gameBoardArray[0] == 'X' && gameBoard.gameBoardArray[3] == 'X' && gameBoard.gameBoardArray[6] == 'X') {
             console.log("X wins");
         }
-        if (gameBoard.gameBoardArray[6] == 'O' && gameBoard.gameBoardArray[7] == 'O' && gameBoard.gameBoardArray[8] == 'O') {
+        else if (gameBoard.gameBoardArray[6] == 'O' && gameBoard.gameBoardArray[7] == 'O' && gameBoard.gameBoardArray[8] == 'O') {
             console.log("O wins");
         }
-        if (gameBoard.gameBoardArray[0] == 'O' && gameBoard.gameBoardArray[3] == 'O' && gameBoard.gameBoardArray[6] == 'O') {
+        else if (gameBoard.gameBoardArray[0] == 'O' && gameBoard.gameBoardArray[3] == 'O' && gameBoard.gameBoardArray[6] == 'O') {
             console.log("O wins");
         }
         // Diagonal markers
-        if (gameBoard.gameBoardArray[2] == 'X' && gameBoard.gameBoardArray[4] == 'X' && gameBoard.gameBoardArray[6] == 'X') {
+        else if (gameBoard.gameBoardArray[2] == 'X' && gameBoard.gameBoardArray[4] == 'X' && gameBoard.gameBoardArray[6] == 'X') {
             console.log("X wins");
         }
-        if (gameBoard.gameBoardArray[2] == 'O' && gameBoard.gameBoardArray[4] == 'O' && gameBoard.gameBoardArray[6] == 'O') {
+        else if (gameBoard.gameBoardArray[2] == 'O' && gameBoard.gameBoardArray[4] == 'O' && gameBoard.gameBoardArray[6] == 'O') {
             console.log("O wins");
+        }
+        // tie logic
+        else if (typeof (gameBoard.gameBoardArray[0]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[1]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[2]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[3]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[4]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[5]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[6]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[7]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[8]) == 'string') {
+            console.log('tie');
         }
     }
 
@@ -292,14 +375,26 @@ const displayController = (function () {
         if (gameBoard.gameBoardArray[6] == 'X' && gameBoard.gameBoardArray[7] == 'X' && gameBoard.gameBoardArray[8] == 'X') {
             console.log("X wins");
         }
-        if (gameBoard.gameBoardArray[1] == 'X' && gameBoard.gameBoardArray[4] == 'X' && gameBoard.gameBoardArray[7] == 'X') {
+        else if (gameBoard.gameBoardArray[1] == 'X' && gameBoard.gameBoardArray[4] == 'X' && gameBoard.gameBoardArray[7] == 'X') {
             console.log("X wins");
         }
-        if (gameBoard.gameBoardArray[6] == 'O' && gameBoard.gameBoardArray[7] == 'O' && gameBoard.gameBoardArray[8] == 'O') {
+        else if (gameBoard.gameBoardArray[6] == 'O' && gameBoard.gameBoardArray[7] == 'O' && gameBoard.gameBoardArray[8] == 'O') {
             console.log("O wins");
         }
-        if (gameBoard.gameBoardArray[1] == 'O' && gameBoard.gameBoardArray[4] == 'O' && gameBoard.gameBoardArray[7] == 'O') {
+        else if (gameBoard.gameBoardArray[1] == 'O' && gameBoard.gameBoardArray[4] == 'O' && gameBoard.gameBoardArray[7] == 'O') {
             console.log("O wins");
+        }
+        // tie logic
+        else if (typeof (gameBoard.gameBoardArray[0]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[1]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[2]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[3]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[4]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[5]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[6]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[7]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[8]) == 'string') {
+            console.log('tie');
         }
     }
 
@@ -318,21 +413,33 @@ const displayController = (function () {
         if (gameBoard.gameBoardArray[6] == 'X' && gameBoard.gameBoardArray[7] == 'X' && gameBoard.gameBoardArray[8] == 'X') {
             console.log("X wins");
         }
-        if (gameBoard.gameBoardArray[2] == 'X' && gameBoard.gameBoardArray[5] == 'X' && gameBoard.gameBoardArray[8] == 'X') {
+        else if (gameBoard.gameBoardArray[2] == 'X' && gameBoard.gameBoardArray[5] == 'X' && gameBoard.gameBoardArray[8] == 'X') {
             console.log("X wins");
         }
-        if (gameBoard.gameBoardArray[6] == 'O' && gameBoard.gameBoardArray[7] == 'O' && gameBoard.gameBoardArray[8] == 'O') {
+        else if (gameBoard.gameBoardArray[6] == 'O' && gameBoard.gameBoardArray[7] == 'O' && gameBoard.gameBoardArray[8] == 'O') {
             console.log("O wins");
         }
-        if (gameBoard.gameBoardArray[2] == 'O' && gameBoard.gameBoardArray[5] == 'O' && gameBoard.gameBoardArray[8] == 'O') {
+        else if (gameBoard.gameBoardArray[2] == 'O' && gameBoard.gameBoardArray[5] == 'O' && gameBoard.gameBoardArray[8] == 'O') {
             console.log("O wins");
         }
         // Diagonal markers
-        if (gameBoard.gameBoardArray[0] == 'X' && gameBoard.gameBoardArray[4] == 'X' && gameBoard.gameBoardArray[8] == 'X') {
+        else if (gameBoard.gameBoardArray[0] == 'X' && gameBoard.gameBoardArray[4] == 'X' && gameBoard.gameBoardArray[8] == 'X') {
             console.log("X wins");
         }
-        if (gameBoard.gameBoardArray[0] == 'O' && gameBoard.gameBoardArray[4] == 'O' && gameBoard.gameBoardArray[8] == 'O') {
+        else if (gameBoard.gameBoardArray[0] == 'O' && gameBoard.gameBoardArray[4] == 'O' && gameBoard.gameBoardArray[8] == 'O') {
             console.log("O wins");
+        }
+        // tie logic
+        else if (typeof (gameBoard.gameBoardArray[0]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[1]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[2]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[3]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[4]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[5]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[6]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[7]) == 'string' &&
+            typeof (gameBoard.gameBoardArray[8]) == 'string') {
+            console.log('tie');
         }
     }
 
